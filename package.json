@@ -1,0 +1,50 @@
+{
+  "name": "@nutriswap/v2-sdk",
+  "license": "MIT",
+  "version": "3.0.0",
+  "description": "🛠 An SDK for building applications on top of Nutriswap V2",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nutriswap/v2-sdk.git"
+  },
+  "keywords": [
+    "nutriswap",
+    "ethereum",
+    "v2",
+    "sdk"
+  ],
+  "module": "dist/v2-sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.0.0",
+    "@ethersproject/solidity": "^5.0.0",
+    "@nutriswap/sdk-core": "git+https://github.com/nutriswap/sdk-core.git#main",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3"
+  },
+  "devDependencies": {
+    "@nutriswap/v2-core": "git+https://github.com/nutriswap/v2-core.git#main",
+    "@types/big.js": "^4.0.5",
+    "@types/jest": "^24.0.25",
+    "tsdx": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
